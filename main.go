@@ -29,10 +29,10 @@ func main() {
 
 		if err == nil {
 			t := time.Now().In(location)
-			fmt.Printf("%02d:%02d:%02d", t.Hour(), t.Minute(), t.Second())
+			fmt.Printf("%02d:%02d:%02d\n", t.Hour(), t.Minute(), t.Second())
 			return
 		}
 	}
 
-	fmt.Printf("timein: The location %s does not exist", city)
+	fmt.Printf("timein: The location %s does not exist\n", city)
 }
